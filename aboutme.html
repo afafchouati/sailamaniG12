@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>about me</title>
+  <link rel="stylesheet" href="css/aboutme.css">
+  <link rel="stylesheet" href="css/footer.css">
+  <link rel="stylesheet" href="css/nav.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+  integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+</head>
+<body>
+  <header>
+    <div class="logo"><span>Sa</span>Am</div>
+    <nav>
+      <ul>
+        <li><a href="index.html" class="active"><i class="fa fa-home"></i>&nbsp;<span>Home</span></a></li>
+        <li><a href="#"><i class="fa fa-user"></i>&nbsp;<span>Register</span></a></li>
+        <li><a href="categories.html"><i class="fa fa-address-card"></i>&nbsp;<span>Categories</span></a></li>
+        <li><a href="aboutme.html"><i class="fa fa-info"></i>&nbsp;<span>About me</span></a></li>
+      </ul>
+    </nav>
+    <div class="toggle-menu"><i class="fas fa-bars"></i></div>
+  </header>
+  <br>
+
+  <section class="about">
+    <img class="back" src="img/about_back.jpg" alt="background">
+    <div class="content_about">
+        <h2 id="off_title"></h2>
+        <img id="img_btn" src="img/logo.jpg" alt="logo">
+        <div id="desc" class="desc">
+            <h2>Sail Amani</h2>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Error, cum omnis? Quidem libero harum beatae. Velit corrupti pariatur eum ab consequuntur amet tempore tempora! Ex eum inventore assumenda velit dolore.</p>
+            <button>join our services</button>
+            <button>Contact us</button>
+        </div>
+    </div>
+</section>
+<br>
+  <div class="footer">
+    <div class="inner-footer">
+
+      <div class="footer-item">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt ipsum beatae omnis quos natus quod quam animi
+          tempora voluptatem</p>
+
+      </div>
+      <div class="footer-item">
+        <h3 style="color: white; text-transform: uppercase;">Quick Link</h3><br>
+        <div class="ligne"></div>
+        <ul>
+          <li><a href="index.php">home</a></li>
+          <li><a href="log.php">Connection</a></li>
+          <li><a href="page2.php">program and offers </a></li>
+
+        </ul>
+      </div>
+      <div class="footer-item">
+        <h3 style="color: white; text-transform: uppercase;">about</h3>
+        <br>
+        <div class="ligne"></div>
+        <ul>
+          <li><a href="#about-section">About US</a></li>
+          <li><a href="#section-team">the coaches</a></li>
+          <li><a href="#index-gallery">Gallery</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-item">
+        <h3 style="color: white; text-transform: uppercase;">Contact us</h3>
+        <br>
+        <div class="ligne"></div>
+        <ul>
+          <li>adresse</li>
+          <li>+231*********</li>
+          <li>emeil@cv.com</li>
+        </ul>
+      </div>
+    </div>
+
+    <script>
+      const menu = document.getElementsByClassName('toggle-menu')[0],nav = document.getElementsByTagName('nav')[0];
+      menu.addEventListener('click',()=>{
+      nav.classList.toggle('active-nav');
+      dark_mode.addEventListener('click',()=>{
+        if(nav.classList.contains('active-nav')){
+          nav.classList.remove('active-nav');
+        }
+      });
+  });
+  //about click
+  const btn = document.getElementById('img_btn'),
+        title = document.getElementById("off_title"),
+        desc = document.getElementById('desc');
+  btn.addEventListener('click',()=>{
+      desc.classList.toggle("active");
+      btn.classList.toggle("active");
+      title.classList.toggle("active");
+  });
+  //typing
+  var i = 0,txt = "Hi I'm Sail Amani, Click on my picture to see more !";
+  function typeWriter() {
+  if (i < txt.length) {
+      title.innerHTML += txt.charAt(i);
+      i++;
+  }
+  }
+  setInterval(() => {
+      typeWriter();
+  }, 100);
+  </script>
+</body>
+</html>

@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <script src="https://kit.fontawesome.com/a076d05399.js"></script><title>categoreis</title>
+  <link rel="stylesheet" href="css/footer.css">
+  <link rel="stylesheet" href="css/nav.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+</head>
+<body>
+  
+  <header>
+    <div class="logo"><span>Sa</span>Am</div>
+    <nav>
+      <ul>
+        <li><a href="index.html" class="active"><i class="fa fa-home"></i>&nbsp;<span>Home</span></a></li>
+        <li><a href="#"><i class="fa fa-user"></i>&nbsp;<span>Register</span></a></li>
+        <li><a href="categories.html"><i class="fa fa-address-card"></i>&nbsp;<span>Categories</span></a></li>
+        <li><a href="aboutme.html"><i class="fa fa-info"></i>&nbsp;<span>About me</span></a></li>
+      </ul>
+    </nav>
+    <div class="toggle-menu"><i class="fas fa-bars"></i></div>
+  </header>
+  <!--categorie-->
+
+<section class="overflow-hidden"id="feature">
+  <br>
+     <h1 style="color: white; text-align:center; font-size:30px;
+     ">Categories Page</h1>
+     <br>
+     <div class="feature-row div-animation left-div">
+      <br>
+
+             <div class="feature-col">
+              
+                 <i class="fas fa-laptop-code fa-3x" ></i>
+
+                 <h3>Web Dev</h3>
+             </div>
+             <div class="feature-col">
+              <i class="fas fa-desktop fa-3x"></i>
+                    <h3>Desktop dev</h3>
+             </div>
+             <div class="feature-col">
+                    <i class="fas fa-mobile-alt fa-3x"></i>
+                    <h3>mobile dev</h3>
+              </div>
+             
+     </div>
+ </section>
+
+
+
+ <style>
+        
+ 
+/* categorie */
+#feature{
+  padding-top: 50px;
+  padding-bottom: 50px;
+  background:#ff6b81;
+}
+.feature-row{
+  width: 80%;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.feature-col{
+  flex-basis:25%;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  color: white;
+
+}
+.feature-col i{
+  width: 50%;
+}
+.feature-col h3{
+  padding-bottom: 10px;
+  color: white;
+}
+ </style>
+ <br>
+ <style>
+  * {
+    box-sizing: border-box;
+  }
+  
+  body {
+    background-color: #f1f1f1;
+    padding: 20px;
+    font-family: Arial;
+  }
+  
+  /* Center website */
+  .main {
+    max-width: 1000px;
+    margin: auto;
+  }
+  
+  h1 {
+    font-size: 50px;
+    word-break: break-all;
+  }
+  
+  .row {
+    margin: 10px -16px;
+  }
+  
+  /* Add padding BETWEEN each column */
+  .row,
+  .row > .column {
+    padding: 8px;
+  }
+  
+  /* Create three equal columns that floats next to each other */
+  .column {
+    float: left;
+    width: 33.33%;
+    display: none; /* Hide all elements by default */
+  }
+  
+  /* Clear floats after rows */ 
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Content */
+  .content {
+    background-color: white;
+    padding: 10px;
+  }
+  
+  /* The "show" class is added to the filtered elements */
+  .show {
+    display: block;
+  }
+  
+  /* Style the buttons */
+  .btn {
+    border: none;
+    outline: none;
+    padding: 12px 16px;
+    background-color: white;
+    cursor: pointer;
+  }
+  
+  .btn:hover {
+    background-color: #ddd;
+  }
+  
+  .btn.active {
+    background-color: #ff6b81;
+    color: white;
+  }
+  </style>
+  </head>
+  <body>
+  
+  <!-- MAIN (Center website) -->
+  <div class="main">
+  
+  <h1>MYLOGO.COM</h1>
+  <hr>
+  
+  <h2>my experience</h2>
+  <br>
+  
+  <div id="myBtnContainer">
+    <button class="btn active" onclick="filterSelection('all')"> Show all</button>
+    <button class="btn" onclick="filterSelection('nature')">Web Dev</button>
+    <button class="btn" onclick="filterSelection('cars')"> Desktop Dev</button>
+    <button class="btn" onclick="filterSelection('people')">Mobile Dev</button>
+  </div>
+  
+  <!-- Portfolio Gallery Grid -->
+  <div class="row">
+    <div class="column nature">
+      <div class="content">
+        <img src="img/html1.png" alt="Mountains" >
+        <h4>HTML</h4>
+        <p>Lorem </p>
+      </div>
+    </div>
+    <div class="column nature">
+      <div class="content">
+      <img src="img/css.png" alt="Lights">
+        <h4>CSS</h4>
+        <p>Lorem </p>
+      </div>
+    </div>
+    <div class="column nature">
+      <div class="content">
+      <img src="img/js.png" alt="Nature">
+        <h4>JavaScript</h4>
+        <p>Lorem </p>
+      </div>
+    </div>
+    
+    <div class="column cars">
+      <div class="content">
+        <img src="img/python.png" alt="python">
+        <h4>python</h4>
+        <p>Lorem </p>
+      </div>
+    </div>
+    <div class="column cars">
+      <div class="content">
+      <img src="img/java.png" alt="java">
+        <h4>java</h4>
+        <p>Lorem </p>
+      </div>
+    </div>
+    <div class="column cars">
+      <div class="content">
+      <img src="img/julia.png" alt="Car">
+        <h4>Julia</h4>
+        <p>Lorem </p>
+      </div>
+    </div>
+  
+    <div class="column people">
+      <div class="content">
+        <img src="img/java.png" alt="java" >
+        <h4>Java</h4>
+        <p>Lorem </p>
+      </div>
+    </div>
+    <div class="column people">
+      <div class="content">
+      <img src="img/swift.png" alt="swift">
+        <h4>swift</h4>
+        <p>Lorem </p>
+      </div>
+    </div>
+    <div class="column people">
+      <div class="content">
+      <img src="img/c.png" alt="c#">
+        <h4>C#</h4>
+        <p>Lorem </p>
+      </div>
+    </div>
+  <!-- END GRID -->
+  </div>
+  
+  <!-- END MAIN -->
+  </div>
+  
+  <script>
+  filterSelection("all")
+  function filterSelection(c) {
+    var x, i;
+    x = document.getElementsByClassName("column");
+    if (c == "all") c = "";
+    for (i = 0; i < x.length; i++) {
+      w3RemoveClass(x[i], "show");
+      if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
+    }
+  }
+  
+  function w3AddClass(element, name) {
+    var i, arr1, arr2;
+    arr1 = element.className.split(" ");
+    arr2 = name.split(" ");
+    for (i = 0; i < arr2.length; i++) {
+      if (arr1.indexOf(arr2[i]) == -1) {element.className += " " + arr2[i];}
+    }
+  }
+  
+  function w3RemoveClass(element, name) {
+    var i, arr1, arr2;
+    arr1 = element.className.split(" ");
+    arr2 = name.split(" ");
+    for (i = 0; i < arr2.length; i++) {
+      while (arr1.indexOf(arr2[i]) > -1) {
+        arr1.splice(arr1.indexOf(arr2[i]), 1);     
+      }
+    }
+    element.className = arr1.join(" ");
+  }
+  
+  
+  // Add active class to the current button (highlight it)
+  var btnContainer = document.getElementById("myBtnContainer");
+  var btns = btnContainer.getElementsByClassName("btn");
+  for (var i = 0; i < btns.length; i++) {
+    btns[i].addEventListener("click", function(){
+      var current = document.getElementsByClassName("active");
+      current[0].className = current[0].className.replace(" active", "");
+      this.className += " active";
+    });
+  }
+  </script>
+<br>  
+  <div class="footer">
+    <div class="inner-footer">
+
+      <div class="footer-item">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt ipsum beatae omnis quos natus quod quam animi
+          tempora voluptatem</p>
+
+      </div>
+      <div class="footer-item">
+        <h3 style="color: white; text-transform: uppercase;">Quick Link</h3><br>
+        <div class="ligne"></div>
+        <ul>
+          <li><a href="index.php">home</a></li>
+          <li><a href="log.php">Connection</a></li>
+          <li><a href="page2.php">program and offers </a></li>
+
+        </ul>
+      </div>
+      <div class="footer-item">
+        <h3 style="color: white; text-transform: uppercase;">about</h3>
+        <br>
+        <div class="ligne"></div>
+        <ul>
+          <li><a href="#about-section">About US</a></li>
+          <li><a href="#section-team">the coaches</a></li>
+          <li><a href="#index-gallery">Gallery</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-item">
+        <h3 style="color: white; text-transform: uppercase;">Contact us</h3>
+        <br>
+        <div class="ligne"></div>
+        <ul>
+          <li>adresse</li>
+          <li>+231*********</li>
+          <li>emeil@cv.com</li>
+        </ul>
+
+      </div>
+
+
+    </div>
+
+
+  </div>
+</body>
+</html>
